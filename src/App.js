@@ -1,9 +1,9 @@
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <main className="container mx-auto px-4">
+      <h1>hi</h1>
+    </main>
   );
 }
 
