@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { MdSubdirectoryArrowLeft } from "react-icons/md";
 
 const Header = () => {
     return (
@@ -9,6 +10,7 @@ const Header = () => {
                     <li className="pl-4"><a href="/">About</a></li>
                     <li className="pl-4"><a href="/">Projects</a></li>
                     <li className="pl-4"><a href="/">Contact</a></li>
+                    <li className="pl-4 text-lg"><MdSubdirectoryArrowLeft/></li>
                 </ul>
             </div>
         </section>
