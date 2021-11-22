@@ -2,7 +2,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <main className="container mx-auto px-4 text-gray-800">
+    <main className="container mx-auto px-4 text-gray-800 bg-gray-100">
       <Header/>
     </main>
   );
