@@ -14,7 +14,9 @@ function App() {
       <div className="container mx-auto" style={dottedBackground}>
         <Header/>
         <Home/>
-        <About/>
+        <div className="mx-4">
+          <About/>
+        </div>
       </div>
     </main>
   );
