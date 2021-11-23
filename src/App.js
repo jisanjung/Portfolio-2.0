@@ -9,8 +9,8 @@ function App() {
   }
 
   return (
-    <main className="text-gray-800 bg-gray-100">
-      <div className="container mx-auto px-4" style={dottedBackground}>
+    <main className="text-gray-800 bg-gray-100 px-4">
+      <div className="container mx-auto" style={dottedBackground}>
         <Header/>
         <Home/>
       </div>

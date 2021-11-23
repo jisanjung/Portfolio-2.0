@@ -5,3 +5,12 @@
 html, body {
     font-family: 'Roboto', sans-serif;
 }
+
+.chevron {
+    animation: down 1.4s infinite;
+}
+@keyframes down {
+    0% { opacity: 0; top: 0px; }
+    50% { opacity: 1; top: 5px; }
+    100% { opacity: 0; top: 10px; }
+}
