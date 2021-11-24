@@ -1,6 +1,10 @@
 import React from 'react';
 import Title from './Title';
 import Slider from "react-slick";
+import paypal from "../images/paypal.png";
+import islandnetworks from "../images/islandnetworks.png";
+import iconplc from "../images/iconplc.png";
+import equisearch from "../images/equisearch.png";
 
 const About = () => {
 
@@ -29,10 +33,10 @@ const About = () => {
             technologies and developing my skills which has opened up many opportunities. Here are some companies and startups I've worked for:
             </p>
             <Slider {...settings}>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
+                <img src={paypal} alt="PayPal logo" className="px-3"/>
+                <img src={islandnetworks} alt="Island Networks logo" className="px-3"/>
+                <img src={iconplc} alt="ICON plc logo" className="px-3"/>
+                <img src={equisearch} alt="equiSearch logo" className="px-3"/>
             </Slider>
         </section>
     )
