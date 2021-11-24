@@ -5,7 +5,7 @@ import { BsChevronCompactDown, BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Home = () => {
     return (
-        <section className="container mx-auto py-16 h-screen">
+        <section className="container mx-auto py-16 h-screen flex justify-center items-center">
             <div className="flex flex-col items-center">
                 <div className="bg-blue-100 rounded-full w-28 flex justify-center items-center">
                     <img src={memoji} alt="Memoji" className="relative top-1"/>

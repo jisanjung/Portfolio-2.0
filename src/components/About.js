@@ -21,23 +21,25 @@ const About = () => {
     };
 
     return (
-        <section>
+        <section className="py-8">
             <Title text="About"/>
-            <ul className="text-2xl">
+            <ul className="text-2xl mt-8">
                 <li>Make it work.</li>
                 <li>Make it right.</li>
                 <li>Make it fast.</li>
             </ul>
-            <p>
+            <p className="mt-8">
             The ability to adapt to different environments is a key skill, especially in software development. Because of this, I have grown a passion for learning up-to-date
             technologies and developing my skills which has opened up many opportunities. Here are some companies and startups I've worked for:
             </p>
-            <Slider {...settings}>
-                <img src={paypal} alt="PayPal logo" className="px-3"/>
-                <img src={islandnetworks} alt="Island Networks logo" className="px-3"/>
-                <img src={iconplc} alt="ICON plc logo" className="px-3"/>
-                <img src={equisearch} alt="equiSearch logo" className="px-3"/>
-            </Slider>
+            <div className="mt-8">
+                <Slider {...settings}>
+                    <img src={paypal} alt="PayPal logo" className="px-3"/>
+                    <img src={islandnetworks} alt="Island Networks logo" className="px-3"/>
+                    <img src={iconplc} alt="ICON plc logo" className="px-3"/>
+                    <img src={equisearch} alt="equiSearch logo" className="px-3"/>
+                </Slider>
+            </div>
         </section>
     )
 }
