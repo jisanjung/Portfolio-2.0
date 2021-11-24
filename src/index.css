@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: Tex;
+    src: url(./fonts/texgyreheros-regular.otf);
+}
+
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Tex', sans-serif;
 }
 
 .chevron {
