@@ -2,11 +2,9 @@ import React from 'react'
 
 const ProjectModal = (props) => {
 
-    const { title, stack } = props.project;
-
     return (
-        <div>
-            
+        <div className="fixed inset-0">
+            hi
         </div>
     )
 }
