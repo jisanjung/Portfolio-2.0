@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Title from './Title';
 import { VscRecord } from "react-icons/vsc";
+import ProjectImage from './ProjectImage';
 
 const Projects = () => {
 
@@ -9,33 +10,38 @@ const Projects = () => {
     let projectList = [
         {
             id: 1,
-            title: "Pull Request App",
-            stack: ["ReactJS", "GraphQL", "TailwindCSS", "Github API"],
-            type: "Dashboard"
+            title: "Joo's Burgers",
+            stack: ["HTML", "CSS", "JavaScript", "SASS"],
+            type: "Client Site",
+            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"]
         },
         {
             id: 2,
             title: "Glitter and Polish",
             stack: ["HTML", "CSS", "JavaScript"],
-            type: "Client Site"
+            type: "Client Site",
+            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"]
         },
         {
             id: 3,
-            title: "Joo's Burgers",
-            stack: ["HTML", "CSS", "JavaScript", "SASS"],
-            type: "Client Site"
+            title: "Pull Request App",
+            stack: ["ReactJS", "GraphQL", "TailwindCSS", "Github API"],
+            type: "Dashboard",
+            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"]
         },
         {
             id: 4,
             title: "COVID-19 Tracker",
             stack: ["ReactJS", "ChartJS", "SASS"],
-            type: "Dashboard"
+            type: "Dashboard",
+            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"]
         },
         {
             id: 5,
             title: "EquiSearch",
             stack: ["ReactJS", "SASS"],
-            type: "Landing Page"
+            type: "Landing Page",
+            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"]
         }
     ];
 
@@ -65,7 +71,9 @@ const Projects = () => {
             <ul className="mt-8">
                 {projectList.map(project => {
                     return (
-                        <li key={project.id} className="w-full h-56 bg-gray-300 mb-4"></li>
+                        <li key={project.id} className="w-full h-56 bg-gray-300 mb-4">
+                            <ProjectImage title={project.title}/>
+                        </li>
                     )
                 })}
             </ul>
