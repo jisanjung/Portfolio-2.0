@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Title from './Title';
 import { VscRecord } from "react-icons/vsc";
 import ProjectImage from './ProjectImage';
+import Project from './Project';
 
 const Projects = () => {
 
@@ -71,9 +72,9 @@ const Projects = () => {
             <ul className="mt-8">
                 {projectList.map(project => {
                     return (
-                        <li key={project.id} className="w-full h-56 bg-gray-300 mb-4">
+                        <Project key={project.id} title={project.title}>
                             <ProjectImage title={project.title}/>
-                        </li>
+                        </Project>
                     )
                 })}
             </ul>
