@@ -22,7 +22,7 @@ const About = () => {
     };
 
     return (
-        <section className="py-12 pb-28">
+        <section className="pt-12 pb-28">
             <Title text="About"/>
             <div className="flex mt-8">
                 <VscRecord className="text-sm mr-4 mt-1"/>

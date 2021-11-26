@@ -45,7 +45,7 @@ const Projects = () => {
     });
 
     return (
-        <section className="py-12">
+        <section className="pt-12 pb-28">
             <Title text="Projects"/>
             <div className="flex mt-12">
                 <VscRecord className="text-sm mr-4 mt-1"/>
