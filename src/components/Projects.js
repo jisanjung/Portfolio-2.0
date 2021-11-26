@@ -3,12 +3,10 @@ import Title from './Title';
 import { VscRecord } from "react-icons/vsc";
 import ProjectImage from './ProjectImage';
 import Project from './Project';
-import ProjectModal from './ProjectModal';
 
 const Projects = () => {
 
     const [type, setType] = useState("All");
-    const [openModal, setOpenModal] = useState(false);
  
     let projectList = [
         {
@@ -74,13 +72,12 @@ const Projects = () => {
             <ul className="mt-8">
                 {projectList.map(project => {
                     return (
-                        <Project key={project.id} title={project.title} setModal={setOpenModal}>
+                        <Project key={project.id} title={project.title}>
                             <ProjectImage title={project.title}/>
                         </Project>
                     )
                 })}
             </ul>
-            {openModal ? <ProjectModal/> : <></>}
         </section>
     )
 }
