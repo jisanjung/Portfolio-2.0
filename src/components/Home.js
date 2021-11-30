@@ -17,7 +17,7 @@ const Home = () => {
                 <h3 className="text-2xl text-center py-4">Jisan Jung</h3>
                 <h1 className="text-6xl text-center">Software Engineer</h1>
                 <p className="py-8 px-8 text-center">What I love doing most is solving business problems by implementing simple, friendly user interfaces.</p>
-                <Button><span>See my work</span></Button>
+                <Button type="dark"><span>See my work</span></Button>
                 <BsChevronCompactDown className="text-4xl text-gray-800 chevron relative"/>
             </div>
         </section>
