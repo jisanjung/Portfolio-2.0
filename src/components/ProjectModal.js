@@ -50,10 +50,10 @@ const ProjectModal = (props) => {
                 </div>
                 <div className="p-4">
                     <h1 className="text-xl">{props.project.title}</h1>
-                    <p>
+                    <p className="mt-4">
                         {props.project.description}
                     </p>
-                    <p className="text-sm">{props.project.stack.join(", ")}</p>
+                    <p className="text-sm mt-4 text-gray-500">{props.project.stack.join(", ")}</p>
                 </div>
             </div>
         </div>

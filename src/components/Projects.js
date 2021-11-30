@@ -18,7 +18,8 @@ const Projects = () => {
             stack: ["HTML", "SASS", "JavaScript"],
             type: "Client Site",
             images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
-            description: "Site designed for potential clients and/or restaurant owners."
+            description: "Site designed for potential clients and/or restaurant owners.",
+            links: ["https://github.com/jisanjung/Joos", "https://jisanjung.github.io/Joos/"]
         },
         {
             id: 2,
@@ -26,7 +27,8 @@ const Projects = () => {
             stack: ["HTML", "CSS", "JavaScript"],
             type: "Client Site",
             images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
-            description: "Site and booking system for a local nail salon owner. Improved owner's customer management and simplified process for customers making appointments."
+            description: "Site and booking system for a local nail salon owner. Improved owner's customer management and simplified process for customers making appointments.",
+            links: ["https://github.com/jisanjung/Glitter-and-Polish", "https://glitterpolishnails.com/"]
         },
         {
             id: 3,
@@ -34,7 +36,8 @@ const Projects = () => {
             stack: ["ReactJS", "GraphQL", "TailwindCSS", "Github API"],
             type: "Dashboard",
             images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
-            description: "Internship project: improved the team’s pull request close times by designing, developing, and deploying a dashboard tool to assist with analysis and assignment automation."
+            description: "Internship project: improved the team’s pull request close times by designing, developing, and deploying a dashboard tool to assist with analysis and assignment automation.",
+            links: []
         },
         {
             id: 4,
@@ -42,7 +45,8 @@ const Projects = () => {
             stack: ["ReactJS", "ChartJS", "SASS"],
             type: "Dashboard",
             images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
-            description: "Tracking live global covid numbers for each country. Tracks new cases, deaths, and recovered."
+            description: "Tracking live global covid numbers for each country. Tracks new cases, deaths, and recovered.",
+            links: ["https://github.com/jisanjung/COVID-19-Data-Reports", "https://jisanjung.github.io/COVID-19-Data-Reports/"]
         },
         {
             id: 5,
@@ -50,7 +54,8 @@ const Projects = () => {
             stack: ["ReactJS", "SASS"],
             type: "Landing Page",
             images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
-            description: "Established a startup's brand and purpose by implementing the landing page designed by the UI/UX team"
+            description: "Established a startup's brand and purpose by implementing the landing page designed by the UI/UX team",
+            links: ["https://github.com/equisearch/EquiSearch-Landing-Page", "https://equisearch.io/"]
         }
     ];
 
