@@ -49,7 +49,11 @@ const ProjectModal = (props) => {
                     </Slider>
                 </div>
                 <div className="p-4">
-                    <h1>{props.project.title}</h1>
+                    <h1 className="text-xl">{props.project.title}</h1>
+                    <p>
+                        {props.project.description}
+                    </p>
+                    <p className="text-sm">{props.project.stack.join(", ")}</p>
                 </div>
             </div>
         </div>

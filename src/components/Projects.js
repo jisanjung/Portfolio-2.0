@@ -15,37 +15,42 @@ const Projects = () => {
         {
             id: 1,
             title: "Joo's Burgers",
-            stack: ["HTML", "CSS", "JavaScript", "SASS"],
+            stack: ["HTML", "SASS", "JavaScript"],
             type: "Client Site",
-            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"]
+            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
+            description: "Site designed for potential clients and/or restaurant owners."
         },
         {
             id: 2,
             title: "Glitter and Polish",
             stack: ["HTML", "CSS", "JavaScript"],
             type: "Client Site",
-            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"]
+            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
+            description: "Site and booking system for a local nail salon owner. Improved owner's customer management and simplified process for customers making appointments."
         },
         {
             id: 3,
             title: "Pull Request App",
             stack: ["ReactJS", "GraphQL", "TailwindCSS", "Github API"],
             type: "Dashboard",
-            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"]
+            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
+            description: "Internship project: improved the team’s pull request close times by designing, developing, and deploying a dashboard tool to assist with analysis and assignment automation."
         },
         {
             id: 4,
             title: "COVID-19 Tracker",
             stack: ["ReactJS", "ChartJS", "SASS"],
             type: "Dashboard",
-            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"]
+            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
+            description: "Tracking live global covid numbers for each country. Tracks new cases, deaths, and recovered."
         },
         {
             id: 5,
             title: "EquiSearch",
             stack: ["ReactJS", "SASS"],
             type: "Landing Page",
-            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"]
+            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
+            description: "Established a startup's brand and purpose by implementing the landing page designed by the UI/UX team"
         }
     ];
 
