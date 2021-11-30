@@ -14,6 +14,7 @@ import equisearch1 from "../images/projects/equisearch1.PNG";
 import equisearch2 from "../images/projects/equisearch2.PNG";
 import equisearch3 from "../images/projects/equisearch3.PNG";
 import Slider from "react-slick";
+import Button from './Button';
 
 const ProjectModal = (props) => {
 
@@ -50,10 +51,19 @@ const ProjectModal = (props) => {
                 </div>
                 <div className="p-4">
                     <h1 className="text-xl">{props.project.title}</h1>
-                    <p className="mt-4">
+                    <p className="mt-6">
                         {props.project.description}
                     </p>
-                    <p className="text-sm mt-4 text-gray-500">{props.project.stack.join(", ")}</p>
+                    <p className="text-sm mt-6 text-gray-500">{props.project.stack.join(", ")}</p>
+                    <div className="flex mt-6">
+                        <Button>
+                            <a href="/">View Code</a>
+                        </Button>
+                        <span className="ml-2"></span>
+                        <Button type="dark">
+                            <a href="/">See Project</a>
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>
