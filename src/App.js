@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
@@ -18,6 +19,7 @@ function App() {
         <div className="mx-4">
           <About/>
           <Projects/>
+          <Contact/>
         </div>
       </div>
     </main>
