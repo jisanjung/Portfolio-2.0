@@ -56,14 +56,14 @@ const ProjectModal = (props) => {
                     </p>
                     <p className="text-sm mt-6 text-gray-500">{props.project.stack.join(", ")}</p>
                     <div className="mt-6">
-                        {props.project.links.length === 0 ? <h4 className="text-xs mb-2 text-red-700">Links are not available due to privacy reasons</h4> : <></>}
+                        {!props.project.links.length ? <h4 className="text-xs mb-2 text-red-700">Links are not available due to privacy reasons</h4> : <></>}
                         <div className="flex">
-                            <Button>
-                                <a href="/">View Code</a>
+                            <Button className={!props.project.links.length ? "opacity-50" : ""}>
+                                {!props.project.links.length ? <span>View Code</span> : <a href="/">View Code</a>}
                             </Button>
                             <span className="ml-2"></span>
-                            <Button type="dark">
-                                <a href="/">See Project</a>
+                            <Button type="dark" className={!props.project.links.length ? "opacity-50" : ""}>
+                            {!props.project.links.length ? <span>See Project</span> : <a href="/">See Project</a>}
                             </Button>
                         </div>
                     </div>
