@@ -59,11 +59,11 @@ const ProjectModal = (props) => {
                         {!props.project.links.length ? <h4 className="text-xs mb-2 text-red-700">Links are not available due to privacy reasons</h4> : <></>}
                         <div className="flex">
                             <Button className={!props.project.links.length ? "opacity-50" : ""}>
-                                {!props.project.links.length ? <span>View Code</span> : <a href="/">View Code</a>}
+                                {!props.project.links.length ? <span>View Code</span> : <a href={props.project.links.length ? props.project.links[0] : "#"} target="_blank" rel="noopener noreferrer">View Code</a>}
                             </Button>
                             <span className="ml-2"></span>
                             <Button type="dark" className={!props.project.links.length ? "opacity-50" : ""}>
-                            {!props.project.links.length ? <span>See Project</span> : <a href="/">See Project</a>}
+                            {!props.project.links.length ? <span>See Project</span> : <a href={props.project.links.length ? props.project.links[1] : "#"} target="_blank" rel="noopener noreferrer">See Project</a>}
                             </Button>
                         </div>
                     </div>
