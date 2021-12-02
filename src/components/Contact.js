@@ -2,6 +2,7 @@ import React from 'react'
 import Title from './Title';
 import { VscRecord } from "react-icons/vsc";
 import { GrMailOption, GrLocationPin } from "react-icons/gr";
+import Button from './Button';
 
 const Contact = () => {
     return (
@@ -29,6 +30,9 @@ const Contact = () => {
                         <label htmlFor="message" className="block text-sm font-bold">Message</label>
                         <textarea className="bg-transparent border-b border-gray-400 w-full py-2" name="message" placeholder="Start typing here" rows={5}></textarea>
                     </div>
+                    <Button type="dark" className="w-full">
+                        Send message
+                    </Button>
                 </form>
             </div>
         </section>
