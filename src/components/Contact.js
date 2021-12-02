@@ -13,8 +13,8 @@ const Contact = () => {
             </div>
             <div className="flex flex-col mt-12">
                 <div>
-                    <h4 className="flex items-center"><GrMailOption className="mr-3 text-lg"/>jisan.jung@temple.edu</h4>
-                    <h4 className="flex items-center mt-2"><GrLocationPin className="mr-3 text-lg"/>Philadelphia, PA</h4>
+                    <h4 className="flex items-center text-gray-500"><GrMailOption className="mr-3 text-lg"/>jisan.jung@temple.edu</h4>
+                    <h4 className="flex items-center mt-2 text-gray-500"><GrLocationPin className="mr-3 text-lg"/>Philadelphia, PA</h4>
                 </div>
                 <form className="mt-12">
                     <div className="mb-8">
