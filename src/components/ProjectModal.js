@@ -62,7 +62,7 @@ const ProjectModal = (props) => {
                                 {!props.project.links.length ? <span>View Code</span> : <a href={props.project.links.length ? props.project.links[0] : "#"} target="_blank" rel="noopener noreferrer">View Code</a>}
                             </Button>
                             <span className="ml-2"></span>
-                            <Button type="dark" className={!props.project.links.length ? "opacity-50" : ""}>
+                            <Button color="dark" className={!props.project.links.length ? "opacity-50" : ""}>
                             {!props.project.links.length ? <span>See Project</span> : <a href={props.project.links.length ? props.project.links[1] : "#"} target="_blank" rel="noopener noreferrer">See Project</a>}
                             </Button>
                         </div>

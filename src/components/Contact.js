@@ -30,7 +30,7 @@ const Contact = () => {
                         <label htmlFor="message" className="block text-sm font-bold">Message</label>
                         <textarea className="bg-transparent border-b border-gray-400 w-full py-2" name="message" placeholder="Start typing here" rows={5}></textarea>
                     </div>
-                    <Button type="dark" className="w-full">
+                    <Button type="submit" color="dark" className="w-full">
                         Send message
                     </Button>
                 </form>
