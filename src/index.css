@@ -9,6 +9,7 @@
 
 html, body {
     font-family: 'Tex', sans-serif;
+    overflow-x: hidden;
 }
 
 .chevron {
