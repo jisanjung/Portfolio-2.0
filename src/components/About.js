@@ -23,7 +23,7 @@ const About = () => {
 
     return (
         <section className="pt-12 pb-28">
-            <Title text="About" className="md:text-8xl"/>
+            <Title text="About"/>
             <div className="flex flex-col md:flex-row">
                 <div className="flex mt-8 w-auto md:w-2/5">
                     <VscRecord className="text-sm mr-4 mt-1"/>
