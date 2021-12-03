@@ -22,19 +22,19 @@ const About = () => {
     };
 
     return (
-        <section className="pt-12 pb-28">
+        <section className="pt-12 pb-28 md:pb-36">
             <Title text="About"/>
             <div className="flex flex-col md:flex-row">
-                <div className="flex mt-8 w-auto md:w-2/5">
-                    <VscRecord className="text-sm mr-4 mt-1"/>
-                    <ul className="text-2xl">
+                <div className="flex mt-8 md:mt-12 w-auto md:w-2/5">
+                    <VscRecord className="text-sm md:text-base mr-4 mt-1"/>
+                    <ul className="text-2xl md:text-3xl">
                         <li>Make it work.</li>
                         <li>Make it right.</li>
                         <li>Make it fast.</li>
                     </ul>
                 </div>
                 <div className="w-auto md:w-3/5">
-                    <p className="mt-8">
+                    <p className="mt-8 md:mt-12 md:text-lg">
                     The ability to adapt to different environments is a key skill, especially in software development. Because of this, I have grown a passion for learning up-to-date
                     technologies and developing my skills which has opened up many opportunities. Here are some companies and startups I've worked for:
                     </p>
