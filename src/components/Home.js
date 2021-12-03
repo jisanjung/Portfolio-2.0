@@ -14,9 +14,9 @@ const Home = () => {
                     <li><a href="/"><BsLinkedin className="text-gray-800 text-2xl md:text-3xl mr-1"/></a></li>
                     <li><a href="/"><BsGithub className="text-gray-800 text-2xl md:text-3xl ml-2"/></a></li>
                 </ul>
-                <h3 className="text-2xl text-center py-4">Jisan Jung</h3>
-                <h1 className="text-6xl text-center">Software Engineer</h1>
-                <p className="py-8 px-8 md:px-24 text-center">What I love doing most is solving business problems by implementing simple, friendly user interfaces.</p>
+                <h3 className="text-2xl md:text-3xl text-center py-4">Jisan Jung</h3>
+                <h1 className="text-6xl md:text-7xl text-center">Software Engineer</h1>
+                <p className="py-8 px-8 md:px-24 md:text-lg text-center">What I love doing most is solving business problems by implementing simple, friendly user interfaces.</p>
                 <Button color="dark"><span>See my work</span></Button>
                 <BsChevronCompactDown className="text-4xl text-gray-800 chevron relative"/>
             </div>
