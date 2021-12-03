@@ -6,10 +6,17 @@
     font-family: Tex;
     src: url(./fonts/texgyreheros-regular.otf);
 }
+@font-face {
+    font-family: Timeburner;
+    src: url(./fonts/TimeburnerBold-peGR.ttf);
+}
 
 html, body {
     font-family: 'Tex', sans-serif;
     overflow-x: hidden;
+}
+.logo {
+    font-family: 'Timeburner', sans-serif;
 }
 
 .chevron {
