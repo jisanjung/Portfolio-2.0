@@ -13,11 +13,11 @@ function App() {
   }
 
   return (
-    <main className="text-gray-800 bg-gray-100 px-4">
+    <main className="text-gray-800 bg-gray-100 px-4 md:px-12">
       <div className="container mx-auto relative" style={dottedBackground}>
         <Header/>
         <Home/>
-        <div className="mx-4">
+        <div className="mx-4 md:mx-6">
           <About/>
           <Projects/>
           <Contact/>
