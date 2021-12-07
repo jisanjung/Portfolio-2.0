@@ -82,7 +82,7 @@ const Projects = () => {
                     <span className="w-1/4">{projectList.length} items</span>
                 </div>
             </div>
-            <ul className="mt-8">
+            <ul className="mt-8 block md:flex flex-wrap justify-between">
                 {projectList.map(project => {
                     return (
                         <Project key={project.id} title={project.title} project={project} setCurrentProject={setCurrentProject} setOpenModal={setOpenModal}>
