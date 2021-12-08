@@ -14,7 +14,7 @@ function App() {
 
   return (
     <main className="text-gray-800 bg-gray-100 px-4 md:px-12 lg:px-0">
-      <div className="container mx-auto relative lg:w-4/5 xl:w-auto w-1000px w-1200px" style={dottedBackground}>
+      <div className="container mx-auto relative lg:w-4/5 xl:w-auto w-1000px" style={dottedBackground}>
         <Header/>
         <Home/>
         <div className="mx-4 md:mx-6">
