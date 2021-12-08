@@ -67,7 +67,7 @@ const Projects = () => {
     return (
         <section className="pt-12 pb-28 md:pb-36 lg:pb-48">
             <Title text="Projects"/>
-            <div className="flex mt-12">
+            <div className="flex mt-12 xl:mt-14">
                 <VscRecord className="text-sm mr-4 mt-1 md:text-base xl:text-xl"/>
                 <div className="flex w-full justify-between border-t border-solid border-gray-300">
                     <h4 className="w-1/5 pl-2">Filter:</h4>
@@ -82,7 +82,7 @@ const Projects = () => {
                     <span className="w-1/4">{projectList.length} items</span>
                 </div>
             </div>
-            <ul className="mt-8 block md:flex flex-wrap justify-between">
+            <ul className="mt-8 xl:mt-12 block md:flex flex-wrap justify-between">
                 {projectList.map(project => {
                     return (
                         <Project key={project.id} title={project.title} project={project} setCurrentProject={setCurrentProject} setOpenModal={setOpenModal}>
