@@ -6,7 +6,7 @@ import Button from './Button';
 
 const Contact = () => {
     return (
-        <section className="pt-12 pb-28">
+        <section className="pt-12 pb-36">
             <Title text="Contact"/>
             <div className="flex mt-8">
                 <VscRecord className="text-sm mr-4 mt-1"/>
