@@ -26,7 +26,7 @@ const About = () => {
             <Title text="About"/>
             <div className="flex flex-col md:flex-row">
                 <div className="flex mt-8 md:mt-12 xl:mt-14 w-auto md:w-2/5">
-                    <VscRecord className="text-sm md:text-base mr-4 mt-1"/>
+                    <VscRecord className="text-sm md:text-base xl:text-xl mr-4 mt-1"/>
                     <ul className="text-2xl md:text-3xl xl:text-4xl">
                         <li>Make it work.</li>
                         <li>Make it right.</li>
