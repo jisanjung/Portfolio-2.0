@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <section className="bg-gray-100 absolute left-0 right-0">
             <div className="flex justify-between">
-                <a href="/" className="text-lg h-12 px-6 bg-green-600 text-white tracking-wider flex items-center"><h1 className="logo">jjung</h1></a>
+                <a href="/" className="text-lg xl:text-xl h-12 px-6 bg-green-600 text-white tracking-wider flex items-center"><h1 className="logo">jjung</h1></a>
                 <ul className="flex items-center py-4 lg:pt-12 lg:pb-4">
                     <li className="pl-4 lg:pl-6"><a href="/">About</a></li>
                     <li className="pl-4 lg:pl-6"><a href="/">Projects</a></li>
