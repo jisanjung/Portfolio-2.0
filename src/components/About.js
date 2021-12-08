@@ -22,7 +22,7 @@ const About = () => {
     };
 
     return (
-        <section className="pt-12 pb-28 md:pb-36">
+        <section className="pt-12 pb-28 md:pb-36 lg:pb-48">
             <Title text="About"/>
             <div className="flex flex-col md:flex-row">
                 <div className="flex mt-8 md:mt-12 w-auto md:w-2/5">

@@ -65,7 +65,7 @@ const Projects = () => {
     });
 
     return (
-        <section className="pt-12 pb-36">
+        <section className="pt-12 pb-28 md:pb-36 lg:pb-48">
             <Title text="Projects"/>
             <div className="flex mt-12">
                 <VscRecord className="text-sm mr-4 mt-1"/>
