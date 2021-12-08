@@ -39,17 +39,17 @@ const ProjectModal = (props) => {
     };
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center px-4">
-            <div className="bg-white w-full bg-gray-100 relative pt-4">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center px-4 md:px-12 lg:px-0">
+            <div className="bg-white w-full bg-gray-100 relative pt-4 lg:container lg:mx-auto lg:w-auto w-500px w-700px">
                 <button className="absolute right-4" onClick={() => props.setModal(false)}>
                     <GrClose className="text-lg"/>
                 </button>
                 <div className="pt-8">
                     <Slider {...settings}>
-                        {imageList.map((item, i) => <img src={item} alt={`Project ${i + 1}`} key={i} className="h-56 object-cover"/>)}
+                        {imageList.map((item, i) => <img src={item} alt={`Project ${i + 1}`} key={i} className="h-72 object-cover"/>)}
                     </Slider>
                 </div>
-                <div className="p-4">
+                <div className="p-4 md:p-8">
                     <h1 className="text-xl">{props.project.title}</h1>
                     <p className="mt-6">
                         {props.project.description}
