@@ -4,6 +4,7 @@ import { VscRecord } from "react-icons/vsc";
 import ProjectImage from './ProjectImage';
 import Project from './Project';
 import ProjectModal from './ProjectModal';
+import { Element } from 'react-scroll';
 
 const Projects = () => {
 
@@ -65,7 +66,8 @@ const Projects = () => {
     });
 
     return (
-        <section id="projects" className="pt-12 pb-28 md:pb-36 lg:pb-48">
+        <Element name="projects">
+            <section id="projects" className="pt-12 pb-28 md:pb-36 lg:pb-48">
             <Title text="Projects"/>
             <div className="flex mt-12 xl:mt-14">
                 <VscRecord className="text-sm mr-4 mt-1 md:text-base xl:text-xl"/>
@@ -92,7 +94,8 @@ const Projects = () => {
                 })}
             </ul>
             {openModal ? <ProjectModal project={currentProject} setModal={setOpenModal} modal={openModal}/> : <></>}
-        </section>
+            </section>
+        </Element>
     )
 }
 

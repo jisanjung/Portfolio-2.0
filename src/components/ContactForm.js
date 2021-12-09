@@ -33,7 +33,7 @@ const ContactForm = () => {
                 <textarea className="bg-transparent border-b border-gray-400 w-full py-2" name="message" placeholder="Start typing here" rows={5}></textarea>
                 <ValidationError field="message" prefix="Your message" errors={submit.errors}/>
             </div>
-            <Button type="submit" color="dark" className="w-full" disabled={submit.submitting}>
+            <Button type="submit" color="dark" className="w-full">
                 Send message
             </Button>
         </form>
