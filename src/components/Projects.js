@@ -74,7 +74,7 @@ const Projects = () => {
                 <div className="flex w-full justify-between border-t border-solid border-gray-300">
                     <h4 className="w-1/5 pl-2">Filter:</h4>
                     <div className="w-1/2 border-l border-r border-solid border-gray-300">
-                        <select name="project" className="w-full bg-transparent font-bold" onChange={e => setType(e.target.value)}>
+                        <select name="project" className="w-full bg-transparent font-bold cursor-pointer" onChange={e => setType(e.target.value)}>
                             <option>All</option>
                             <option>Dashboard</option>
                             <option>Client Site</option>

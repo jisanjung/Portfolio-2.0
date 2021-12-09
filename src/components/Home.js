@@ -13,8 +13,8 @@ const Home = () => {
                         <img src={memoji} alt="Memoji" className="relative top-1"/>
                     </div>
                     <ul className="flex mt-6">
-                        <li><a href="https://www.linkedin.com/in/jisan-jung-33129b179/" target="_blank" rel="noopener noreferrer"><BsLinkedin className="text-gray-800 text-2xl md:text-3xl mr-1"/></a></li>
-                        <li><a href="https://github.com/jisanjung" target="_blank" rel="noopener noreferrer"><BsGithub className="text-gray-800 text-2xl md:text-3xl ml-2"/></a></li>
+                        <li><a href="https://www.linkedin.com/in/jisan-jung-33129b179/" target="_blank" rel="noopener noreferrer"><BsLinkedin className="text-gray-800 text-2xl md:text-3xl mr-1 hover:text-gray-600"/></a></li>
+                        <li><a href="https://github.com/jisanjung" target="_blank" rel="noopener noreferrer"><BsGithub className="text-gray-800 text-2xl md:text-3xl ml-2 hover:text-gray-600"/></a></li>
                     </ul>
                     <h3 className="text-2xl md:text-3xl text-center py-4">Jisan Jung</h3>
                     <h1 className="text-6xl md:text-7xl xl:text-8xl text-center">Software Engineer</h1>
