@@ -16,8 +16,8 @@ const ProjectImage = (props) => {
     if (props.title === "EquiSearch") projectImg = equisearch;
 
     return (
-        <div className="w-full h-full px-4 xl:px-6">
-            <img src={projectImg} alt={props.title} className="w-full h-full object-cover object-center md:cursor-pointer"/>
+        <div className="w-full h-full overflow-hidden">
+            <img src={projectImg} alt={props.title} className="w-full h-full object-cover object-center md:cursor-pointer transform transition duration-300 md:hover:scale-105 md:bg-black"/>
         </div>
     )
 }
