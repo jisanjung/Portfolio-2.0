@@ -23,14 +23,14 @@ const Header = () => {
                     <h1 className="logo">jjung</h1>
                 </Link>
                 <ul className={`transition-all flex items-center py-4 lg:pb-4 ${shrinkHeader ? "lg:pt-4" : "lg:pt-12"}`}>
-                    <li className="ml-4 lg:ml-6 relative">
-                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} className='md:cursor-pointer'>About</Link>
+                    <li className="ml-4 lg:ml-6">
+                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={500} className='md:cursor-pointer hover:font-bold'>About</Link>
                     </li>
                     <li className="ml-4 lg:ml-6">
-                        <Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500} className='md:cursor-pointer'>Projects</Link>
+                        <Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500} className='md:cursor-pointer hover:font-bold'>Projects</Link>
                     </li>
                     <li className="ml-4 lg:ml-6">
-                        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500} className='md:cursor-pointer'>Contact</Link>
+                        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500} className='md:cursor-pointer hover:font-bold'>Contact</Link>
                     </li>
                     <li className="ml-4 lg:ml-6 text-lg"><MdSubdirectoryArrowLeft className="text-gray-800"/></li>
                 </ul>
