@@ -22,7 +22,7 @@ const Home = () => {
                     <Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500}>
                         <Button color="dark"><span>See my work</span></Button>
                     </Link>
-                    <BsChevronCompactDown className="text-4xl text-gray-800 chevron relative"/>
+                    <BsChevronCompactDown className="text-5xl text-gray-800 chevron relative"/>
                 </div>
             </section>
         </Element>

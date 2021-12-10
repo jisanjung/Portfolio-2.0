@@ -20,7 +20,7 @@ html, body {
 }
 
 .chevron {
-    animation: down 1.4s infinite;
+    animation: down 1.6s infinite;
 }
 @keyframes down {
     0% { opacity: 0; top: 0px; }
