@@ -39,7 +39,7 @@ const ProjectModal = (props) => {
     };
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center px-4 md:px-12 lg:px-0">
+        <div className="z-10 fixed inset-0 bg-black bg-opacity-50 flex items-center px-4 md:px-12 lg:px-0">
             <div className="bg-white w-full bg-gray-100 relative pt-4 lg:container lg:mx-auto lg:w-auto w-500px w-700px">
                 <button className="absolute right-4" onClick={() => props.setModal(false)}>
                     <GrClose className="text-lg"/>
