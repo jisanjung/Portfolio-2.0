@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MdSubdirectoryArrowLeft } from "react-icons/md";
 import { Link } from 'react-scroll';
-import { useEffect, useState } from 'react/cjs/react.development';
 
 const Header = () => {
 
