@@ -17,7 +17,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col md:flex-row mt-12">
                     <div className="w-full md:w-1/2 xl:text-lg">
-                        <h4 className="flex items-center text-gray-500"><GrMailOption className="mr-3 text-lg"/>jisan.jung@temple.edu</h4>
+                        <h4 className="flex items-center text-gray-500 md:hover:underline"><GrMailOption className="mr-3 text-lg"/><a href='mailto:tun22982@temple.edu' target="_blank" rel="noopener noreferrer">jisan.jung@temple.edu</a></h4>
                         <h4 className="flex items-center mt-2 text-gray-500"><GrLocationPin className="mr-3 text-lg"/>Philadelphia, PA</h4>
                     </div>
                     <ContactForm/>
