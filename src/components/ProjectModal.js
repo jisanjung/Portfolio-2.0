@@ -43,7 +43,7 @@ const ProjectModal = (props) => {
             <div className="relative inset-0 h-full flex items-center">
                 <div className="w-full  bg-gray-100 relative lg:container lg:mx-auto lg:w-auto w-500px w-600px h-96">
                     <div className='relative'>
-                        <button className="rounded-full bg-red-400 p-1 absolute -right-2 -top-2 z-20" onClick={() => props.setModal(false)}>
+                        <button className="rounded-full bg-red-400 md:hover:bg-red-500 p-1 absolute -right-2 -top-2 z-20" onClick={() => props.setModal(false)}>
                             <FaMinus className="text-white"/>
                         </button>
                         <div className='z-10 absolute inset-0 bg-black opacity-20'>
