@@ -20,7 +20,7 @@ const Home = () => {
                     <h1 className="text-6xl md:text-7xl xl:text-8xl text-center">Software Engineer</h1>
                     <p className="py-8 px-8 md:px-24 lg:px-36 md:text-lg xl:text-2xl text-center">What I love doing most is solving business problems by implementing simple, friendly user interfaces.</p>
                     <Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500}>
-                        <Button color="dark"><span>See my work</span></Button>
+                        <Button color="dark" className="px-8"><span>See my work</span></Button>
                     </Link>
                     <BsChevronCompactDown className="text-5xl text-gray-800 chevron relative"/>
                 </div>

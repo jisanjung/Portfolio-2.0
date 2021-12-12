@@ -1,5 +1,5 @@
 import React from 'react';
-import { GrClose } from "react-icons/gr";
+import { FaMinus } from "react-icons/fa";
 import joos1 from "../images/projects/joos1.PNG";
 import joos2 from "../images/projects/joos2.PNG";
 import joos3 from "../images/projects/joos3.PNG";
@@ -39,48 +39,52 @@ const ProjectModal = (props) => {
     };
 
     return (
-        <div className="z-10 fixed inset-0 bg-black bg-opacity-50 flex items-center px-4 md:px-12 lg:px-0">
-            <div className="bg-white w-full bg-gray-100 relative pt-4 lg:container lg:mx-auto lg:w-auto w-500px w-700px">
-                <button className="absolute right-4" onClick={() => props.setModal(false)}>
-                    <GrClose className="text-lg"/>
-                </button>
-                <div className="pt-8">
-                    <Slider {...settings}>
-                        {imageList.map((item, i) => <img src={item} alt={`Project ${i + 1}`} key={i} className="h-72 object-cover"/>)}
-                    </Slider>
-                </div>
-                <div className="p-4 md:p-8">
-                    <h1 className="text-xl">{props.project.title}</h1>
-                    <p className="mt-6">
-                        {props.project.description}
-                    </p>
-                    <p className="text-sm mt-6 text-gray-500">{props.project.stack.join(", ")}</p>
-                    <div className="mt-6">
-                        {!props.project.links.length ? <h4 className="text-xs mb-2 text-red-700">Links are not available due to privacy reasons</h4> : <></>}
-                        <div className="flex">
-                            {props.project.links.length ? (
-                            <a href={props.project.links[0]} target="_blank" rel="noopener noreferrer">
-                                <Button>
-                                    <span>View Code</span>
-                                </Button>
-                            </a>
-                            ) : (
-                                <Button className="opacity-50">
-                                    <span>View Code</span>
-                                </Button>
-                            )}
-                            <span className="ml-2"></span>
-                            {props.project.links.length ? (
-                                <a href={props.project.links[1]} target="_blank" rel="noopener noreferrer">
-                                    <Button color="dark">
-                                        <span>See Project</span>
+        <div className="z-10 fixed inset-0 bg-black bg-opacity-50 px-4 md:px-12 lg:px-0">
+            <div className="relative inset-0 h-full flex items-center">
+                <div className="w-full  bg-gray-100 relative lg:container lg:mx-auto lg:w-auto w-500px w-600px h-96">
+                    <div className='relative'>
+                        <button className="rounded-full bg-red-400 p-1 absolute -right-2 -top-2 z-20" onClick={() => props.setModal(false)}>
+                            <FaMinus className="text-white"/>
+                        </button>
+                        <div className='z-10 absolute inset-0 bg-black opacity-20'>
+                        </div>
+                        <h1 className='z-20 p-4 md:p-6 absolute text-white opacity-100 text-2xl font-bold drop-shadow' style={{"textShadow": "2px 3px 14px #000"}}>{props.project.title}</h1>
+                        <Slider {...settings}>
+                            {imageList.map((item, i) => <img src={item} alt={`Project ${i + 1}`} key={i} className="h-72 object-cover"/>)}
+                        </Slider>
+                    </div>
+                    <div className="z-20 absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-gray-100">
+                        <p className="text-sm text-gray-500">{props.project.stack.join(", ")}</p>
+                        <p className="mt-4">
+                            {props.project.description}
+                        </p>
+                        <div className="mt-4">
+                            {!props.project.links.length ? <h4 className="text-xs mb-2 text-red-700">Links are not available due to privacy reasons</h4> : <></>}
+                            <div className="flex">
+                                {props.project.links.length ? (
+                                <a href={props.project.links[0]} target="_blank" rel="noopener noreferrer">
+                                    <Button className="px-4">
+                                        <span>View Code</span>
                                     </Button>
                                 </a>
-                            ) : (
-                                <Button color="dark" className="opacity-50">
-                                    <span>See Project</span>
-                                </Button>
-                            )}
+                                ) : (
+                                    <Button className="opacity-50 px-4">
+                                        <span>View Code</span>
+                                    </Button>
+                                )}
+                                <span className="ml-2"></span>
+                                {props.project.links.length ? (
+                                    <a href={props.project.links[1]} target="_blank" rel="noopener noreferrer">
+                                        <Button color="dark" className="px-4">
+                                            <span>See Project</span>
+                                        </Button>
+                                    </a>
+                                ) : (
+                                    <Button color="dark" className="opacity-50 px-4">
+                                        <span>See Project</span>
+                                    </Button>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
