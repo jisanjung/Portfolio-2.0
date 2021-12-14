@@ -3,14 +3,11 @@ import Title from './Title';
 import { VscRecord } from "react-icons/vsc";
 import ProjectImage from './ProjectImage';
 import Project from './Project';
-import ProjectModal from './ProjectModal';
 import { Element } from 'react-scroll';
 
 const Projects = () => {
 
     const [type, setType] = useState("All");
-    const [currentProject, setCurrentProject] = useState({});
-    const [openModal, setOpenModal] = useState(false);
  
     let projectList = [
         {
@@ -25,7 +22,7 @@ const Projects = () => {
         {
             id: 2,
             title: "Glitter and Polish",
-            stack: ["HTML", "CSS", "JavaScript"],
+            stack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
             type: "Client Site",
             images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
             description: "Site and booking system for a local nail salon owner. Improved owner's customer management and simplified process for customers making appointments.",
@@ -84,16 +81,15 @@ const Projects = () => {
                     <span className="w-1/4">{projectList.length} items</span>
                 </div>
             </div>
-            <ul className="mt-8 xl:mt-12 block md:flex flex-wrap justify-between">
+            <ul className="mt-12 block">
                 {projectList.map(project => {
                     return (
-                        <Project key={project.id} title={project.title} project={project} setCurrentProject={setCurrentProject} setOpenModal={setOpenModal}>
+                        <Project key={project.id} title={project.title} project={project}>
                             <ProjectImage title={project.title}/>
                         </Project>
                     )
                 })}
             </ul>
-            {openModal ? <ProjectModal project={currentProject} setModal={setOpenModal} modal={openModal}/> : <></>}
             </section>
         </Element>
     )
