@@ -38,8 +38,8 @@ function App() {
       </Link>
       <div className="container mx-auto relative lg:w-4/5 xl:w-auto w-1000px" style={dottedBackground}>
         <Header/>
-        <Home/>
-        <div className="mx-4 md:mx-6">
+        <div className="mx-4 md:mx-6 pt-6 lg:pt-12">
+          <Home/>
           <About/>
           <Projects/>
           <Contact/>
