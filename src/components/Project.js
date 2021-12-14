@@ -9,9 +9,9 @@ const Project = (props) => {
             <ProjectImage title={props.project.title} className="md:w-1/2"/>
             <div className='relative pt-2 md:pt-0 md:w-1/2 md:ml-6 lg:ml-8'>
                 <h1 className='text-xl lg:text-2xl'>{props.project.title}</h1>
-                <ul className='py-2 lg:py-3 xl:py-4 flex'>
-                    {props.project.stack.map(skill => {
-                        return <li className='text-xs text-white p-1 mr-1 bg-gray-400 rounded'>{skill}</li>
+                <ul className='py-2 lg:py-3 xl:py-4 flex flex-wrap'>
+                    {props.project.stack.map((skill, i) => {
+                        return <li key={i} className='text-xs text-white p-1 mr-1 bg-gray-400 rounded mt-1'>{skill}</li>
                     })}
                 </ul>
                 <p className='pb-2 lg:pb-3 xl:pb-4'>

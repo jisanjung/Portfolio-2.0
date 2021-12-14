@@ -81,7 +81,7 @@ const Projects = () => {
                     <span className="w-1/4">{projectList.length} items</span>
                 </div>
             </div>
-            <ul className="mt-12 block">
+            <ul className="mt-8 lg:mt-12 block">
                 {projectList.map(project => {
                     return (
                         <Project key={project.id} title={project.title} project={project}>
