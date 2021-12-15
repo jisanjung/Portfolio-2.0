@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Title from './Title';
 import { VscRecord } from "react-icons/vsc";
 import ProjectImage from './ProjectImage';
 import Project from './Project';
 import { Element } from 'react-scroll';
+import AOS from 'aos';
 
 const Projects = () => {
 
@@ -61,6 +62,11 @@ const Projects = () => {
         if (type === "All" || type === "") return projectList
         return item.type === type;
     });
+
+    // allow elements to appear when when state is changed
+    useEffect(() => {
+        AOS.refresh();
+    }, [type]);
 
     return (
         <Element name="projects">
