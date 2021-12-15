@@ -42,10 +42,10 @@ const About = () => {
                         </p>
                         <div className="mt-8 xl:mt-12">
                             <Slider {...settings}>
-                                <img src={paypal} alt="PayPal logo" className="px-3"/>
-                                <img src={islandnetworks} alt="Island Networks logo" className="px-3"/>
-                                <img src={iconplc} alt="ICON plc logo" className="px-3"/>
-                                <img src={equisearch} alt="equiSearch logo" className="px-3"/>
+                                <img src={paypal} alt="PayPal logo" className="px-3 lg:px-5"/>
+                                <img src={islandnetworks} alt="Island Networks logo" className="px-3 lg:px-5"/>
+                                <img src={iconplc} alt="ICON plc logo" className="px-3 lg:px-5"/>
+                                <img src={equisearch} alt="equiSearch logo" className="px-3 lg:px-5"/>
                             </Slider>
                         </div>
                     </div>
