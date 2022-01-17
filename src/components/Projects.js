@@ -13,6 +13,15 @@ const Projects = () => {
     let projectList = [
         {
             id: 1,
+            title: "Jobify",
+            stack: ["ReactJS", "Material UI", "Easy Peasy", "Mapbox", "Adzuna API"],
+            type: "Dashboard",
+            images: ["../images/projects/jobify.PNG"],
+            description: "Jobify is intended to assist with the job searching process by looking exactly where a job would be located by simply using your zip code and a keyword.",
+            links: ["https://github.com/jisanjung/Jobify", "https://jobifyus.netlify.app/"]
+        },
+        {
+            id: 2,
             title: "Joo's Burgers",
             stack: ["HTML", "SASS", "JavaScript"],
             type: "Client Site",
@@ -21,22 +30,13 @@ const Projects = () => {
             links: ["https://github.com/jisanjung/Joos", "https://jisanjung.github.io/Joos/"]
         },
         {
-            id: 2,
+            id: 3,
             title: "Glitter and Polish",
             stack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
             type: "Client Site",
             images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
             description: "Site and booking system for a local nail salon owner. Improved owner's customer management and simplified process for customers making appointments.",
             links: ["https://github.com/jisanjung/Glitter-and-Polish", "https://glitterpolishnails.com/"]
-        },
-        {
-            id: 3,
-            title: "Pull Request App",
-            stack: ["ReactJS", "GraphQL", "TailwindCSS", "Github API"],
-            type: "Dashboard",
-            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
-            description: "Internship project: improved the team’s pull request close times by designing, developing, and deploying a dashboard tool to assist with analysis and assignment automation.",
-            links: []
         },
         {
             id: 4,
@@ -46,15 +46,6 @@ const Projects = () => {
             images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
             description: "Tracking live global covid numbers for each country. Tracks new cases, deaths, and recovered.",
             links: ["https://github.com/jisanjung/COVID-19-Data-Reports", "https://jisanjung.github.io/COVID-19-Data-Reports/"]
-        },
-        {
-            id: 5,
-            title: "EquiSearch",
-            stack: ["ReactJS", "SASS"],
-            type: "Landing Page",
-            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
-            description: "Established a startup's brand and purpose by implementing the landing page designed by the UI/UX team",
-            links: ["https://github.com/equisearch/EquiSearch-Landing-Page", "https://equisearch.io/"]
         }
     ];
 
@@ -81,7 +72,6 @@ const Projects = () => {
                             <option>All</option>
                             <option>Dashboard</option>
                             <option>Client Site</option>
-                            <option>Landing Page</option>
                         </select>
                     </div>
                     <span className="w-1/4">{projectList.length} items</span>

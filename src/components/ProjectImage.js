@@ -3,7 +3,7 @@ import pr from "../images/projects/pr2.PNG";
 import glitter from "../images/projects/glitter1.PNG";
 import joos from "../images/projects/joos1.PNG";
 import covid from "../images/projects/covid.PNG";
-import equisearch from "../images/projects/equisearch1.PNG";
+import jobify from "../images/projects/jobify.PNG";
 
 const ProjectImage = (props) => {
 
@@ -13,7 +13,7 @@ const ProjectImage = (props) => {
     if (props.title === "Glitter and Polish") projectImg = glitter;
     if (props.title === "Joo's Burgers") projectImg = joos;
     if (props.title === "COVID-19 Tracker") projectImg = covid;
-    if (props.title === "EquiSearch") projectImg = equisearch;
+    if (props.title === "Jobify") projectImg = jobify;
 
     return (
         <div className={`w-full h-56 lg:h-72 overflow-hidden ${props.className}`}>
