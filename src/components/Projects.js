@@ -38,15 +38,6 @@ const Projects = () => {
             description: "Site and booking system for a local nail salon owner. Improved owner's customer management and simplified process for customers making appointments.",
             links: ["https://github.com/jisanjung/Glitter-and-Polish", "https://glitterpolishnails.com/"]
         },
-        {
-            id: 4,
-            title: "COVID-19 Tracker",
-            stack: ["ReactJS", "ChartJS", "SASS"],
-            type: "Dashboard",
-            images: ["../images/projects/pr1.PNG", "../images/projects/pr2.PNG", "../images/projects/pr3.PNG"],
-            description: "Tracking live global covid numbers for each country. Tracks new cases, deaths, and recovered.",
-            links: ["https://github.com/jisanjung/COVID-19-Data-Reports", "https://jisanjung.github.io/COVID-19-Data-Reports/"]
-        }
     ];
 
     projectList = projectList.filter(item => {
